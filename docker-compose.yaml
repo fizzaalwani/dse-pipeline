@@ -1,0 +1,9 @@
+services:
+  dse-pipeline:
+    build: .
+    container_name: dse-pipeline
+
+    volumes:
+      - ./processed_data:/app/processed_data
+      - ./logs:/app/logs
+      - ./raw_data:/app/raw_data
